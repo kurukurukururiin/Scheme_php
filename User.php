@@ -15,6 +15,11 @@ class User
         $this->password = $password;
     }
 
+    public static function create(int $id, string $name, string $email, string $password): self {
+        return new self($id, $name, $email, $password);
+    }
+
+
     public function getId()
     {
         return $this->id;
