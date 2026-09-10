@@ -2,10 +2,10 @@
 
 class User
 {
-    private $id;
-    private $name;
-    private $email;
-    private $password;
+    public $id;
+    public $name;
+    public $email;
+    public $password;
 
     public function __construct($id, $name, $email, $password)
     {

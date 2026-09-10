@@ -1,0 +1,26 @@
+[
+    {
+        "id": null,
+        "name": null,
+        "email": null,
+        "password": null,
+        "isAdmin": true,
+        "requires2FA": true
+    },
+    {
+        "id": 1,
+        "name": "Ege Kuru",
+        "email": "Egekuru2006@gmail.com",
+        "password": "12345qwerty",
+        "isAdmin": true,
+        "requires2FA": true
+    },
+    {
+        "id": 2,
+        "name": "John Pork",
+        "email": "johnporj@proton.me",
+        "password": "porkpork1243",
+        "isAdmin": false,
+        "requires2FA": false
+    }
+]
