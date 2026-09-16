@@ -22,5 +22,29 @@
         "password": "porkpork1243",
         "isAdmin": false,
         "requires2FA": false
+    },
+    {
+        "id": 1715,
+        "name": "Ege Kuru",
+        "email": "qwertyewqs@proton.me",
+        "password": "B7jwG7*3P%vq8Dy^VE*n",
+        "isAdmin": false,
+        "requires2FA": false
+    },
+    {
+        "id": 4943,
+        "name": "123123",
+        "email": "egekuru2006@gmail.com",
+        "password": "123",
+        "isAdmin": false,
+        "requires2FA": false
+    },
+    {
+        "id": 1039,
+        "name": "123123",
+        "email": "egekuru2006@gmail.com",
+        "password": "123",
+        "isAdmin": false,
+        "requires2FA": false
     }
 ]
