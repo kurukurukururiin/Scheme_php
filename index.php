@@ -2,7 +2,7 @@
 
 require_once 'User.php';
 require_once 'AdminUser.php';
-require_once 'UserRepository.php';
+require_once 'UserRepo.php';
 
 $repo = new UserRepository('users.json');
 
