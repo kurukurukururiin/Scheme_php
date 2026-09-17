@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             
             $repo->save($yeniKullanici);
             
-            $mesaj = "Harika! Kaydınız başarıyla oluşturuldu. Hoş geldin, {$isim}!";
+            $mesaj = "Kayıt oluşturuldu, {$isim}!";
             $hataVar = false;
 
         } catch (Exception $e) {
@@ -39,20 +39,98 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta charset="UTF-8">
     <title>Sisteme Kayıt Ol</title>
     <style>
-        body { font-family: sans-serif; background-color: #f4f4f9; display: flex; justify-content: center; padding-top: 50px; }
-        .form-kutusu { background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 350px; }
-        .form-kutusu h2 { margin-top: 0; color: #333; text-align: center; }
-        .form-grup { margin-bottom: 15px; }
-        label { display: block; margin-bottom: 5px; font-weight: bold; color: #555; }
-        input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
-        button { width: 100%; padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; }
-        button:hover { background-color: #218838; }
-        
-        /* Hata ve Başarı mesajları için dinamik stiller */
-        .bildirim { padding: 15px; margin-bottom: 20px; border-radius: 4px; text-align: center; }
-        .basari { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
-        .hata { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
-    </style>
+    body { 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        background-color: #f0f2f5; 
+        margin: 0;
+        height: 100vh;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .form-kutusu { 
+        background: #ffffff; 
+        padding: 40px; 
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.1); 
+        width: 350px; 
+    }
+    
+    .form-kutusu h2 { 
+        margin-top: 0; 
+        margin-bottom: 25px;
+        color: #1a1a1a; 
+        text-align: center; 
+        font-weight: 600;
+    }
+    
+    .form-grup { 
+        margin-bottom: 20px; 
+    }
+    
+    label { 
+        display: block; 
+        margin-bottom: 8px; 
+        font-weight: 500; 
+        color: #4a4a4a; 
+        font-size: 14px;
+    }
+    
+    input { 
+        width: 100%; 
+        padding: 12px 15px; 
+        border: 1px solid #dcdcdc; 
+        border-radius: 8px;
+        box-sizing: border-box; 
+        font-size: 15px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    input:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+    }
+    
+    button { 
+        width: 100%; 
+        padding: 12px; 
+        background-color: #007bff; 
+        color: white; 
+        border: none; 
+        border-radius: 8px;
+        font-size: 16px; 
+        font-weight: bold;
+        cursor: pointer; 
+        transition: background-color 0.3s ease;
+        margin-top: 10px;
+    }
+    
+    button:hover { 
+        background-color: #0056b3; 
+    }
+    
+    /* Hata ve Başarı bildirimleri */
+    .bildirim { 
+        padding: 12px 15px; 
+        margin-bottom: 20px; 
+        border-radius: 8px; 
+        text-align: center; 
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    .basari { 
+        background-color: #d1e7dd; 
+        color: #0f5132; 
+        border: 1px solid #badbcc; 
+    }
+    .hata { 
+        background-color: #f8d7da; 
+        color: #842029; 
+        border: 1px solid #f5c2c7;  
+    }
+</style>
 </head>
 <body>
 
