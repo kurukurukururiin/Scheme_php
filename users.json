@@ -54,5 +54,13 @@
         "password": "NSGvBWKg60a9&amp;A7Kmjqd",
         "isAdmin": false,
         "requires2FA": false
+    },
+    {
+        "id": 1710,
+        "name": "Ege Kuru",
+        "email": "egekuru2006@gmail.com",
+        "password": "SY0dt*Gr^0&amp;4b%NFZwJv",
+        "isAdmin": false,
+        "requires2FA": false
     }
 ]

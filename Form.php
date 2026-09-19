@@ -22,8 +22,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             
             $repo->save($yeniKullanici);
             
-            $mesaj = "Kayıt oluşturuldu, {$isim}!";
-            $hataVar = false;
+            header("Location: Upload.php");
+            exit(); 
 
         } catch (Exception $e) {
             $mesaj = "Kayıt Başarısız: " . $e->getMessage();
